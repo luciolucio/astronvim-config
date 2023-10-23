@@ -77,6 +77,10 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
 
   polish = function()
+    vim.cmd([[
+      command! -nargs=0 SaveAsFirstLine execute '1y|w ' .. getline(1)
+    ]])
+
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

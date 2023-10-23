@@ -27,6 +27,9 @@ return {
     -- Save prompting for file name
     ["<leader>W"] = { ":write ", desc = "Save as file" },
 
+    -- Save with the first line as the filename
+    ["<leader>T"] = { "<cmd>SaveAsFirstLine<cr>", desc = "Save as (first line)" },
+
     -- mappings seen under group name "Buffer"
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>bt"] = { name = "Tabs" },
