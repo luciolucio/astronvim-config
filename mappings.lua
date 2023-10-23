@@ -77,6 +77,20 @@ return {
     -- Code Runner
     ["<leader>x"] = { name = "☑ Tasks" },
     ["<leader>xo"] = { "<cmd>OverseerRun<cr>", desc = "⚙ Overseer Run" },
+
+    -- Error navigation
+    ["<F2>"] = { function() vim.diagnostic.goto_next() end, desc = "Next diagnostic" },
+    ["<S-F2>"] = { function() vim.diagnostic.goto_prev() end, desc = "Previous diagnostic" },
+
+    ["<localleader>p"] = {
+      function()
+        vim.cmd "ParinferOff" -- turns Parinfer off
+        vim.cmd 'normal! "+gP' -- pastes from clipboard
+        vim.lsp.buf.format() -- formats the code
+        vim.cmd "ParinferOn" -- turns Parinfer on
+      end,
+      desc = "Paste and format with Parinfer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
