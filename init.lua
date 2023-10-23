@@ -18,6 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
+  -- colorscheme = "github_light",
   colorscheme = "everforest",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
