@@ -84,9 +84,6 @@ return {
     -- Error navigation
     ["<F2>"] = { function() vim.diagnostic.goto_next() end, desc = "Next diagnostic" },
     ["<S-F2>"] = { function() vim.diagnostic.goto_prev() end, desc = "Previous diagnostic" },
-
-    ["<localleader>pp"] = { function() vim.cmd "ParinferOff" end, desc = "Parinfer off", },
-    ["<localleader>pP"] = { function() vim.cmd "ParinferOn" end, desc = "Parinfer on", },
   },
   t = {
     -- setting a mapping to false will disable it
