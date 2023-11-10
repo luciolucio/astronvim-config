@@ -42,8 +42,8 @@ paredit.setup({
     [">f"] = { paredit.api.drag_form_forwards, "Drag form right" },
     ["<f"] = { paredit.api.drag_form_backwards, "Drag form left" },
 
-    ["<localleader>o"] = { paredit.api.raise_form, "Raise form" },
-    ["<localleader>O"] = { paredit.api.raise_element, "Raise element" },
+    ["<localleader>O"] = { paredit.api.raise_form, "Raise form" },
+    ["<localleader>o"] = { paredit.api.raise_element, "Raise element" },
 
     ["E"] = {
       paredit.api.move_to_next_element_tail,
