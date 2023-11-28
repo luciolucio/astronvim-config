@@ -78,7 +78,7 @@ return {
 
   polish = function()
     vim.cmd([[
-      command! -nargs=0 SaveAsFirstLine execute '1y|w ' .. getline(1)
+      command! -nargs=0 SaveAsTopLine execute '1y|w ' .. getline(1)
     ]])
 
     -- Set up custom filetypes
