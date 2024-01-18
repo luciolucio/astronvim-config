@@ -81,6 +81,9 @@ return {
     ["<leader>x"] = { name = "☑ Tasks" },
     ["<leader>xo"] = { "<cmd>OverseerRun<cr>", desc = "⚙ Overseer Run" },
 
+    ["<localleader>cb"] = { "<cmd>ConjureShadowSelect browser-repl<cr>", desc = "Connect to shadow-cljs browser-repl" },
+    ["<localleader>ca"] = { "<cmd>ConjureShadowSelect app<cr>", desc = "Connect to shadow-cljs :app" },
+
     -- Error navigation
     ["<F2>"] = { function() vim.diagnostic.goto_next() end, desc = "Next diagnostic" },
     ["<S-F2>"] = { function() vim.diagnostic.goto_prev() end, desc = "Previous diagnostic" },
