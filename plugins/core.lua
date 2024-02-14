@@ -114,8 +114,11 @@ return {
   },
   {
     "julienvincent/nvim-paredit",
-    config = function()
-      require("nvim-paredit").setup()
-    end
+    config = function() require("nvim-paredit").setup() end,
+  },
+  {
+    "https://gitlab.com/itaranto/plantuml.nvim",
+    version = "*",
+    config = function() require("plantuml").setup() end,
   },
 }
